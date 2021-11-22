@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Kwitter</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="Kwitter.css">
+    </head>
+    <body class="body_background">
+        <center>
+            <br><br>
+            <button onclick="logout()" type="button" id="logout" class="btn btn-success"><span class="glyphicon glyphicon-hand-left"></span><br>Logout</button>
+            <div>
+                <br>
+                <h1>Kwitter</h1>
+                <h3 id="welcome"></h3>
+                <div class="btn btn-info" style="width: 50%;">
+                    <h3 id="name" style="font-size: x-large; color: blue;"></h3>
+                    <input type="text" placeholder="Message" id="msg" class="form-control">
+                    <br>
+                    <button type="button" onclick="like()" id="like" class="btn btn-warning" style="width: 35%;"><span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;&nbsp;Like</button>
+                    <button type="button" onclick="send()" id="send" class="btn btn-success" style="width: 35%;"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Send</button>  
+                     
+                </div>  
+                <br><br>
+                <div id="output"></div>  
+        </center>
+        </body>
+            <script src="kwitter_page.js"></script>
+        </html>
